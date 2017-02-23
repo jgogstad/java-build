@@ -5,3 +5,4 @@ with the following software:
 * Docker
 * Maven 3.3.9
 * Make
+* Bash

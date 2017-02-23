@@ -5,7 +5,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk \
     MAVEN_VERSION=3.3.9 \
     MAVEN_HOME=/usr/share/maven
 
-RUN apk --no-cache --update add make docker curl
+RUN apk --no-cache --update add make docker curl bash
 
 RUN curl -fsSL http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
      | tar -xzC /usr/share \
